@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tienda de Vinos</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Tienda de Café, inicio">
+      <span>TIENDA</span>
+      <span>DE CAFÉ</span>
+    </a>
+
+    <details class="navigation" open>
+      <summary aria-label="Abrir menú de navegación"><span></span><span></span><span></span></summary>
+      <nav aria-label="Navegación principal">
+        <a href="#cafe">Nuestro café</a>
+        <a href="#tutoriales">Tutoriales</a>
+        <a href="#locales">Locales</a>
+        <a href="#menu">Nuestro menú</a>
+        <a href="#contacto">Trabajá con nosotros</a>
+        <a href="#contacto">Franquicias</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </details>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p>Probá nuestras</p>
+        <h1 id="hero-title">CÁPSULAS</h1>
+        <span>100% aluminio compatibles con máquinas Nespresso.</span>
+        <a class="button button-outline" href="#productos">Descubrílas</a>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <span class="capsule capsule-one"></span>
+        <span class="capsule capsule-two"></span>
+        <span class="capsule capsule-three"></span>
+        <span class="capsule capsule-four"></span>
+        <span class="pack pack-one"><span>TIENDA DE CAFÉ</span></span>
+        <span class="pack pack-two"><span>TIENDA DE CAFÉ</span></span>
+        <span class="pack pack-three"><span>TIENDA DE CAFÉ</span></span>
+      </div>
+      <a class="hero-dot" href="#productos" aria-label="Ver productos"></a>
+    </section>
+
+    <section class="products section-wrap" id="productos" aria-labelledby="products-title">
+      <header class="section-heading">
+        <h2 id="products-title">Nuestros productos</h2>
+      </header>
+      <div class="product-list">
+        <a class="product" href="#cafe">
+          <img src="assets/images/cafe-brasil.jpg" alt="Paquete de café Brasil" loading="lazy">
+          <span>Café Brasil</span>
+        </a>
+        <a class="product" href="#cafe">
+          <img src="assets/images/cafe-barista.jpg" alt="Paquete de café Barista" loading="lazy">
+          <span>Café Barista</span>
+        </a>
+        <a class="product" href="#cafe">
+          <img src="assets/images/cafe-minka.jpg" alt="Paquete de café Minka" loading="lazy">
+          <span>Café Minka</span>
+        </a>
+        <a class="product" href="#cafe">
+          <img src="assets/images/cafe-colombia.jpg" alt="Paquete de café Colombia" loading="lazy">
+          <span>Café Colombia</span>
+        </a>
+        <a class="product" href="#cafe">
+          <img src="assets/images/cafe-scegliere.jpg" alt="Paquete de café Scegliere" loading="lazy">
+          <span>Café Scegliere</span>
+        </a>
+      </div>
+      <div class="carousel-dots" aria-hidden="true"><span class="is-active"></span><span></span></div>
+    </section>
+
+    <section class="promos section-wrap" aria-label="Descubrí más">
+      <a class="promo" id="tutoriales" href="#cafe">
+        <img src="assets/images/tutorial-barista.jpg" alt="" loading="lazy">
+        <span class="promo-copy">
+          <span class="eyebrow">Aprendé a hacer tu café como un experto</span>
+          <strong>Secretos del barista</strong>
+          <span class="button button-dark">Ver</span>
+        </span>
+      </a>
+      <a class="promo" id="menu" href="#locales">
+        <img src="assets/images/platos-locales.jpg" alt="" loading="lazy">
+        <span class="promo-copy">
+          <span class="eyebrow">Conocé todo lo que podés encontrar en nuestros locales</span>
+          <strong>Nuestros platos</strong>
+          <span class="button button-dark">Ver</span>
+        </span>
+      </a>
+    </section>
+
+    <section class="coffee" id="cafe" aria-labelledby="coffee-title">
+      <div class="section-heading">
+        <p class="section-kicker">Nuestro café</p>
+        <h2 id="coffee-title">¿Cuál vas a elegir hoy?</h2>
+      </div>
+      <div class="coffee-grid section-wrap">
+        <div class="coffee-notes coffee-notes-left">
+          <article>
+            <h3>Barista</h3>
+            <p>Nuestro tradicional house blend, el hijo prodigio de la casa. Granos provenientes de Brasil, nos permiten obtener este café pleno, de cuerpo medio, sin acidez ni amargor. Si lo vas a tomar en tu casa, te vas a sentir bien cerca de TIENDA.</p>
+          </article>
+          <article>
+            <h3>Scegliere</h3>
+            <p>Una combinación única, lograda por la combinación de tres varietales: Brasil Santos Mogiana, Colombia Supremo y Moka. Un café de cuerpo medio, levemente acidulado y estructuralmente complejo.</p>
+          </article>
+          <article>
+            <h3>Minka</h3>
+            <p>Este blend nos regala un café de gran cuerpo, con un sabor especiado. Si sos amante del café intenso, te vas a enamorar de nuestro Minka.</p>
+          </article>
+        </div>
+        <img class="coffee-photo" src="assets/images/cafe-con-leche.jpg" alt="Leche cayendo sobre un café frío" loading="lazy">
+        <div class="coffee-notes coffee-notes-right">
+          <article>
+            <h3>Colombia</h3>
+            <p>Nuestro varietal clásico. Adentrate en las regiones colombianas con este café de cuerpo suave, gusto frutado, aroma floral y una delicada acidez. Inconfundible.</p>
+          </article>
+          <article>
+            <h3>Descafeinado</h3>
+            <p>Si querés disfrutar un exquisito café, pero reducir tu dosis diaria de cafeína, este es tu blend. Café originario de Colombia, suave, de cuerpo medio y un aroma que te invita a probarlo. Recomendado para aquellas personas sensibles a la cafeína.</p>
+          </article>
+          <article>
+            <h3>Brasil</h3>
+            <p>Un café de cuerpo suave, y baja acidez hacen de BRASIL el ideal para tus preparaciones de café filtrado.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="store" id="locales" aria-labelledby="store-title">
+      <p>Siempre hay un</p>
+      <h2 id="store-title">Tienda cerca tuyo</h2>
+      <span>Encontrá nuestra sucursal más cercana.</span>
+      <a class="button button-outline" href="#contacto">Ingresar</a>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contacto">
+    <div class="footer-main section-wrap">
+      <a class="brand" href="#inicio" aria-label="Tienda de Café, volver al inicio">
+        <span>TIENDA</span>
+        <span>DE CAFÉ</span>
+      </a>
+      <div class="footer-links">
+        <h2>Contenidos</h2>
+        <a href="#inicio">Inicio</a>
+        <a href="#cafe">Nuestro Café</a>
+        <a href="#locales">Locales</a>
+        <a href="#menu">Nuestro menú</a>
+      </div>
+      <div class="footer-links">
+        <h2>¿Necesitás ayuda?</h2>
+        <a href="#tutoriales">Tutoriales</a>
+        <a href="#contacto">Trabajá en TDC</a>
+        <a href="#contacto">Franquicias</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+      <div class="newsletter">
+        <h2>¡Suscribite para recibir descuentos y novedades exclusivas!</h2>
+        <form id="newsletter-form">
+          <label class="visually-hidden" for="newsletter-name">Tu nombre</label>
+          <input id="newsletter-name" name="name" type="text" placeholder="Tu nombre" required>
+          <label class="visually-hidden" for="newsletter-email">Tu email</label>
+          <input id="newsletter-email" name="email" type="email" placeholder="Tu email" required>
+          <label class="newsletter-consent"><input type="checkbox" required> Sí, quiero recibir descuentos y novedades.</label>
+          <button class="button button-gold" type="submit">Suscribirme</button>
+          <p class="form-message" aria-live="polite"></p>
+        </form>
+        <h2 class="social-title">Conectate con nosotros</h2>
+        <div class="social-icons" aria-label="Redes sociales">
+          <span aria-label="Facebook">f</span>
+          <span aria-label="Instagram">◎</span>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>© Copyright 2021 Tienda de café - Todos los derechos reservados.<br>Todos los logos, productos, marcas y nombres aquí utilizados son propiedad registrada.</p>
+    </div>
+  </footer>
+</body>
+</html>
