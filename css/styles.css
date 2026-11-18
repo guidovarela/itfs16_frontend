@@ -721,16 +721,16 @@ img {
 }
 
 .franchise-section {
-  min-height: 520px;
-  padding-block: 58px 64px;
+  min-height: 414px;
+  padding-block: 46px 56px;
   background: #fff;
 }
 
 .franchise-options-title {
-  margin: 0 0 32px;
+  margin: 0 0 28px;
   color: #b89a73;
   font-family: var(--heading-font);
-  font-size: clamp(18px, 2vw, 22px);
+  font-size: clamp(17px, 1.5vw, 20px);
   font-weight: 300;
   text-align: center;
   text-transform: uppercase;
@@ -743,10 +743,10 @@ img {
 }
 
 .franchise-content h2 {
-  margin: 0 0 34px;
+  margin: 0 0 30px;
   color: #1d1d1d;
   font-family: var(--heading-font);
-  font-size: clamp(30px, 4vw, 42px);
+  font-size: clamp(36px, 3.2vw, 46px);
   font-weight: 700;
   line-height: 1.1;
   text-transform: uppercase;
@@ -765,6 +765,7 @@ img {
   max-width: 680px;
   margin: 0 auto 28px;
   color: #555;
+  font-size: 13px;
   line-height: 1.7;
   text-align: center;
 }
@@ -772,13 +773,13 @@ img {
 .franchise-whatsapp {
   gap: 9px;
   border-radius: 3px;
-  background: #25d366;
+  background: hsl(142, 33%, 49%);
   color: #fff;
 }
 
 .franchise-whatsapp:hover,
 .franchise-whatsapp:focus-visible {
-  background: #1db954;
+  background: #337049;
   outline: none;
 }
 
@@ -786,6 +787,42 @@ img {
   width: 20px;
   height: 20px;
   fill: currentColor;
+}
+
+.franchise-page .site-header {
+  min-height: 106px;
+}
+
+.franchise-page .brand {
+  font-size: 34px;
+  line-height: .86;
+}
+
+.franchise-page .brand span + span {
+  padding-left: 12px;
+  font-size: 24px;
+}
+
+.franchise-page .navigation nav {
+  gap: clamp(18px, 2.1vw, 30px);
+}
+
+.franchise-page .navigation nav a {
+  font-size: 14px;
+}
+
+.franchise-page .franchise-whatsapp {
+  width: 248px;
+  min-height: 51px;
+  border-radius: 5px;
+  font-family: var(--body-font);
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: none;
+}
+
+.franchise-page .footer-main {
+  padding-block: 42px 24px;
 }
 
 .tutorial-section {
