@@ -8,7 +8,7 @@
 </head>
 <body>
   <header class="site-header" id="formulario">
-    <a class="brand" href="index.html#inicio" aria-label="Tienda de Vino, inicio">
+    <a class="brand" href="index.html" aria-label="Tienda de Vino, inicio">
       <span>TIENDA</span>
       <span>DE VINO</span>
     </a>
@@ -81,21 +81,21 @@
 
   <footer class="site-footer" id="contacto">
     <div class="footer-main section-wrap">
-      <a class="brand" href="index.html#inicio" aria-label="Tienda de Vino, volver al inicio">
+      <a class="brand" href="index.html" aria-label="Tienda de Vino, volver al inicio">
         <span>TIENDA</span>
         <span>DE VINO</span>
       </a>
       <div class="footer-links">
         <h2>Contenidos</h2>
-        <a href="index.html#inicio">Inicio</a>
-        <a href="#inicio" aria-current="page">Nuestros vinos</a>
-        <a href="index.html#locales">Locales</a>
-        <a href="index.html#menu">Nuestro menú</a>
+        <a href="index.html">Inicio</a>
+        <a href="vinos.html">Nuestros vinos</a>
+        <a href="locales.html">Locales</a>
+        <a href="nuestros-platos.html">Nuestro menú</a>
       </div>
       <div class="footer-links">
         <h2>¿Necesitás ayuda?</h2>
         <a href="tutoriales.html">Tutoriales</a>
-        <a href="trabaja-con-nosotros.html#formulario">Trabajá en TDC</a>
+        <a href="trabaja-con-nosotros.html">Trabajá con nosotros</a>
         <a href="franquicias.html">Franquicias</a>
         <a href="contacto.html">Contacto</a>
       </div>
@@ -113,17 +113,23 @@
         <h2 class="social-title">Conectate con nosotros</h2>
         <div class="social-icons" aria-label="Redes sociales">
           <a href="https://www.facebook.com/tienda.vino/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3c-3.3 0-5 2-5 5v2H6v4h3v5h4v-5h3l1-4h-4V9c0-.7.3-1 1-1z"/></svg>
+            <i class="fa-brands fa-facebook"></i>
           </a>
           <a href="https://www.instagram.com/biendevinos/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm5.5-2.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5z"/></svg>
+            <i class="fa-brands fa-instagram"></i>
           </a>
         </div>
       </div>
     </div>
     <div class="copyright">
-      <p>© Copyright 2026 Tienda de vino - Todos los derechos reservados.<br>Todos los logos, productos, marcas y nombres aquí utilizados son propiedad registrada.</p>
+      <p>© Copyright <span id="year">1990</span> Tienda de vino - Todos los derechos reservados.<br>Todos los logos, productos, marcas y nombres aquí utilizados son propiedad registrada.</p>
     </div>
   </footer>
-</body>
+
+
+  <script>
+    const date = new Date()
+    const fechaHoy = date.getFullYear()
+    document.querySelector("#year").innerHTML=fechaHoy
+  </script></body>
 </html>

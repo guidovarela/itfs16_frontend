@@ -76,21 +76,21 @@
 
   <footer class="site-footer" id="contacto">
     <div class="footer-main section-wrap">
-      <a class="brand" href="#inicio" aria-label="Tienda de Café, volver al inicio">
+      <a class="brand" href="index.html" aria-label="Tienda de Vino, volver al inicio">
         <span>TIENDA</span>
         <span>DE VINO</span>
       </a>
       <div class="footer-links">
         <h2>Contenidos</h2>
-        <a href="#inicio">Inicio</a>
+        <a href="index.html">Inicio</a>
         <a href="vinos.html">Nuestros vinos</a>
-        <a href="#locales">Locales</a>
-        <a href="#menu">Nuestro menú</a>
+        <a href="locales.html">Locales</a>
+        <a href="nuestros-platos.html">Nuestro menú</a>
       </div>
       <div class="footer-links">
         <h2>¿Necesitás ayuda?</h2>
         <a href="tutoriales.html">Tutoriales</a>
-        <a href="#formulario">Trabajá con nosotros</a>
+        <a href="trabaja-con-nosotros.html">Trabajá con nosotros</a>
         <a href="franquicias.html">Franquicias</a>
         <a href="contacto.html">Contacto</a>
       </div>
@@ -107,14 +107,25 @@
         </form>
         <h2 class="social-title">Conectate con nosotros</h2>
         <div class="social-icons" aria-label="Redes sociales">
-          <span aria-label="Facebook">f</span>
-          <span aria-label="Instagram">◎</span>
+          <a href="https://www.facebook.com/tienda.vino/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/biendevinos/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
         </div>
       </div>
     </div>
     <div class="copyright">
-      <p>© Copyright 2026 Tienda de vino - Todos los derechos reservados.<br>Todos los logos, productos, marcas y nombres aquí utilizados son propiedad registrada.</p>
+      <p>© Copyright <span id="year">1990</span> Tienda de vino - Todos los derechos reservados.<br>Todos los logos, productos, marcas y nombres aquí utilizados son propiedad registrada.</p>
     </div>
   </footer>
+
+
+  <script>
+    const date = new Date()
+    const fechaHoy = date.getFullYear()
+    document.querySelector("#year").innerHTML=fechaHoy
+  </script>
 </body>
 </html>
