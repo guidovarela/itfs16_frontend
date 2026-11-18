@@ -825,6 +825,74 @@ img {
   padding-block: 42px 24px;
 }
 
+.wine-catalog-page .site-header {
+  min-height: 106px;
+}
+
+.wine-catalog-page .brand {
+  font-size: 34px;
+  line-height: .86;
+}
+
+.wine-catalog-page .brand span + span {
+  padding-left: 12px;
+  font-size: 24px;
+}
+
+.wine-catalog-page .navigation nav {
+  gap: clamp(18px, 2.1vw, 30px);
+}
+
+.wine-catalog-page .navigation nav a {
+  font-size: 14px;
+}
+
+.wine-catalog {
+  width: min(1500px, calc(100% - 112px));
+  margin-inline: auto;
+  padding-block: 22px 40px;
+}
+
+.wine-catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 36px 32px;
+}
+
+.wine-catalog-card {
+  min-width: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.wine-catalog-card img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.wine-catalog-card figcaption {
+  margin-top: 8px;
+  font-family: var(--heading-font);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.wine-catalog-card .image-credit {
+  display: block;
+  margin-top: 4px;
+  color: #777;
+  font-family: var(--body-font);
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.wine-catalog-card .image-credit a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 .tutorial-section {
   padding-block: 58px 70px;
   background: #fff;
@@ -1052,6 +1120,10 @@ img {
     padding-inline: 24px;
   }
 
+  .wine-catalog-page .site-header {
+    min-height: 68px;
+  }
+
   .navigation summary {
     display: flex;
     width: 36px;
@@ -1103,6 +1175,15 @@ img {
 }
 
 @media (max-width: 700px) {
+  .wine-catalog {
+    width: min(100% - 36px, 560px);
+  }
+
+  .wine-catalog-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 26px 18px;
+  }
+
   .wine-grid {
     grid-template-columns: minmax(0, 1fr) minmax(260px, 1.5fr);
   }
@@ -1175,6 +1256,28 @@ img {
 
   .site-header {
     padding-inline: 18px;
+  }
+
+  .wine-catalog-page .site-header {
+    min-height: 68px;
+  }
+
+  .wine-catalog-page .brand {
+    font-size: 24px;
+    line-height: .9;
+  }
+
+  .wine-catalog-page .brand span + span {
+    padding-left: 9px;
+    font-size: 18px;
+  }
+
+  .wine-catalog-page .navigation nav {
+    gap: 0;
+  }
+
+  .wine-catalog-page .navigation nav a {
+    font-size: 12px;
   }
 
   .hero {
@@ -1291,6 +1394,12 @@ img {
 
   .copyright {
     padding-inline: 18px;
+  }
+}
+
+@media (max-width: 440px) {
+  .wine-catalog-grid {
+    grid-template-columns: 1fr;
   }
 }
 
