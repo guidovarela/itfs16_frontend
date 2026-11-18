@@ -892,6 +892,11 @@ img {
   transform: scale(1.025);
 }
 
+.tutorial-card-image-small {
+  height: 220px;
+  object-fit: cover;
+}
+
 .tutorial-card-copy {
   min-height: 118px;
   display: flex;
