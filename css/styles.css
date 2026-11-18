@@ -603,6 +603,191 @@ img {
   grid-column: 1 / -1;
 }
 
+.contact-section {
+  padding-block: 56px 64px;
+  background: #fff;
+}
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 390px);
+  gap: 80px;
+  align-items: start;
+}
+
+.contact-main h1,
+.contact-social h2 {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 0 0 22px;
+  font-family: var(--heading-font);
+  font-size: clamp(21px, 2.2vw, 28px);
+  font-weight: 500;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.contact-main h1::before,
+.contact-main h1::after,
+.contact-social h2::before,
+.contact-social h2::after {
+  height: 1px;
+  flex: 1;
+  background: #cfcfcf;
+  content: "";
+}
+
+.contact-intro {
+  margin: 0 0 24px;
+  color: #555;
+  line-height: 1.7;
+}
+
+.contact-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.contact-form-field {
+  display: grid;
+  gap: 7px;
+}
+
+.contact-form-field:nth-child(3),
+.contact-form-field:nth-child(4) {
+  grid-column: 1 / -1;
+}
+
+.contact-form-field label {
+  color: #777;
+  font-size: 13px;
+}
+
+.contact-form-field input,
+.contact-form-field textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #aaa;
+  border-radius: 2px;
+  background: #fff;
+  color: var(--ink);
+  font: inherit;
+}
+
+.contact-form-field input {
+  min-height: 42px;
+}
+
+.contact-form-field textarea {
+  resize: vertical;
+}
+
+.contact-form .button-gold {
+  grid-column: 1 / -1;
+  justify-self: start;
+}
+
+.contact-social-icons {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.contact-social-icons a {
+  display: grid;
+  width: 44px;
+  height: 44px;
+  place-items: center;
+  border: 1px solid #8a8a8a;
+  border-radius: 50%;
+  color: #2a2a2a;
+  transition: border-color .2s ease, background-color .2s ease, color .2s ease;
+}
+
+.contact-social-icons a:hover,
+.contact-social-icons a:focus-visible {
+  border-color: var(--gold);
+  background: var(--gold);
+  color: #fff;
+  outline: none;
+}
+
+.contact-social-icons svg {
+  width: 21px;
+  height: 21px;
+  fill: currentColor;
+}
+
+.franchise-section {
+  min-height: 520px;
+  padding-block: 58px 64px;
+  background: #fff;
+}
+
+.franchise-options-title {
+  margin: 0 0 32px;
+  color: #b89a73;
+  font-family: var(--heading-font);
+  font-size: clamp(18px, 2vw, 22px);
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.franchise-content {
+  max-width: 720px;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.franchise-content h2 {
+  margin: 0 0 34px;
+  color: #1d1d1d;
+  font-family: var(--heading-font);
+  font-size: clamp(30px, 4vw, 42px);
+  font-weight: 700;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.franchise-content h2::after {
+  display: block;
+  width: 112px;
+  height: 1px;
+  margin: 26px auto 0;
+  background: #c99a68;
+  content: "";
+}
+
+.franchise-content p {
+  max-width: 680px;
+  margin: 0 auto 28px;
+  color: #555;
+  line-height: 1.7;
+  text-align: center;
+}
+
+.franchise-whatsapp {
+  gap: 9px;
+  border-radius: 3px;
+  background: #25d366;
+  color: #fff;
+}
+
+.franchise-whatsapp:hover,
+.franchise-whatsapp:focus-visible {
+  background: #1db954;
+  outline: none;
+}
+
+.franchise-whatsapp svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
 .footer-links h2,
 .newsletter h2 {
   margin: 0 0 4px;
@@ -680,7 +865,7 @@ img {
   gap: 10px;
 }
 
-.social-icons span {
+.social-icons a {
   display: grid;
   width: 27px;
   height: 27px;
@@ -688,7 +873,20 @@ img {
   border-radius: 50%;
   background: #555;
   color: #fff;
-  font-weight: 700;
+  transition: background-color .2s ease, transform .2s ease;
+}
+
+.social-icons a:hover,
+.social-icons a:focus-visible {
+  background: var(--gold-light);
+  transform: translateY(-2px);
+  outline: none;
+}
+
+.social-icons svg {
+  width: 15px;
+  height: 15px;
+  fill: currentColor;
 }
 
 .copyright {
@@ -794,6 +992,11 @@ img {
     text-align: center;
   }
 
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
   .footer-main {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -802,6 +1005,25 @@ img {
 @media (max-width: 600px) {
   .section-wrap {
     width: min(100% - 36px, 440px);
+  }
+
+  .contact-section {
+    padding-block: 36px 44px;
+  }
+
+  .contact-main h1,
+  .contact-social h2 {
+    gap: 10px;
+  }
+
+  .contact-form {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form-field,
+  .contact-form-field:nth-child(3),
+  .contact-form-field:nth-child(4) {
+    grid-column: 1;
   }
 
   .job-form-section {
