@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tutoriales - Tienda de Vinos</title>
+  <title>Nuestros platos - Tienda de Vinos</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -17,9 +17,9 @@
       <summary aria-label="Abrir menú de navegación"><span></span><span></span><span></span></summary>
       <nav aria-label="Navegación principal">
         <a href="vinos.html">Nuestros vinos</a>
-        <a href="tutoriales.html" aria-current="page">Tutoriales</a>
+        <a href="tutoriales.html">Tutoriales</a>
         <a href="index.html#locales">Locales</a>
-        <a href="index.html#menu">Nuestro menú</a>
+        <a href="#inicio" aria-current="page">Nuestro menú</a>
         <a href="trabaja-con-nosotros.html#formulario">Trabajá con nosotros</a>
         <a href="franquicias.html">Franquicias</a>
         <a href="contacto.html">Contacto</a>
@@ -28,49 +28,27 @@
   </header>
 
   <main id="inicio">
-    <section class="tutorial-section" aria-label="Tutoriales de preparación">
-      <div class="tutorial-intro section-wrap">
-        <p>Nuestra intención es que estas guías sirvan como punto de partida. El sabor del vino puede ser modificado por la forma que lo trates. Cada botella es diferente, por lo cual se deben tomar estos parámetros como pautas, no como leyes absolutas.</p>
-        <p>Pequeños tips</p>
-        <p>* ¿Necesitas enfriar una botella rápidamente? Envuélvela en un paño de cocina húmedo y métela en el congelador durante 10-15 minutos. La humedad acelera el proceso de enfriamiento. ¡Pero no te olvides de ella! (A todos nos ha pasado que una botella explota).
-        </p>
-        <p>* ¿Quieres que tu vino dure más tiempo abierto? Guarda la botella en la heladera y utiliza un tapón de vacío para extraer el aire. Esto ralentiza el proceso de oxidación y mantiene el sabor por más tiempo.</p>
-        <p>* Este es uno de mis mejores consejos y trucos para el vino. ¿Tienes una botella barata que sabe un poco astringente o áspera? Viértela en una jarra o en un recipiente ancho y grande, como una jarra o un jarrón, y déjala respirar durante 30 minutos. Esto suaviza los taninos y ayuda a que los sabores se desarrollen.</p>
-        <p class="tutorial-tips-title"><em>Pequeños tips</em></p>
-        <p class="tutorial-tips"><em>Las botellas de vino selladas con corcho  siempre deben guardarse en posición horizontal.</em></p>
-        <p class="tutorial-conclusion"><strong>Ahora si, a experimentar!</strong>
-        </p>
-      </div>
-
-      <div class="tutorial-grid section-wrap">
-        <article class="tutorial-card">
-          <img src="assets/images/cava.png" alt="Como guardar una botella de vino">
-          <div class="tutorial-card-copy">
-            <h2>GUARDA</h2>
-            <!-- <a href="https://tiendadecafe.com.ar/tutoriales/" target="_blank" rel="noopener noreferrer">VER PASO A PASO &gt;</a> -->
-          </div>
-        </article>
-        <article class="tutorial-card">
-          <img src="assets/images/enfriar-vino.png" alt="Cómo enfriar una botella de vino">
-          <div class="tutorial-card-copy">
-            <h2>ENFRIEMOS EL VINO</h2>
-            <!-- <a href="https://tiendadecafe.com.ar/tutoriales/" target="_blank" rel="noopener noreferrer">VER PASO A PASO &gt;</a> -->
-          </div>
-        </article>
-          <article class="tutorial-card">
-            <img class="tutorial-card" src="assets/images/oxigenar-vino.jpg" alt="Cómo oxigenar el vino">
-            <div class="tutorial-card-copy">
-              <h2>OXIGENAR EL VINO</h2>
-            <!-- <a href="https://tiendadecafe.com.ar/tutoriales/" target="_blank" rel="noopener noreferrer">VER PASO A PASO &gt;</a> -->
-          </div>
-        </article>
-        <article class="tutorial-card">
-          <img src="assets/images/tipos-de-vino-por-cepa.jpg" alt="Tipos de vino por cepa">
-          <div class="tutorial-card-copy">
-            <h2>TIPOS DE VINO POR CEPAS</h2>
-            <!-- <a href="https://tiendadecafe.com.ar/tutoriales/" target="_blank" rel="noopener noreferrer">VER PASO A PASO &gt;</a> -->
-          </div>
-        </article>
+    <section class="dish-section section-wrap" aria-labelledby="dishes-title">
+      <header class="section-heading">
+        <h1 id="dishes-title">Nuestros platos</h1>
+      </header>
+      <div class="dish-grid">
+        <figure class="dish-card">
+          <img src="assets/images/ensalada.png" alt="Ensalada">
+          <figcaption>Ensalada de hojas verdes</figcaption>
+        </figure>
+        <figure class="dish-card">
+          <img src="assets/images/hamburguesa.png" alt="Hamburguesa">
+          <figcaption>Hamburguesa</figcaption>
+        </figure>
+        <figure class="dish-card">
+          <img src="assets/images/otraEnsalada.png" alt="Otra ensalada">
+          <figcaption>Ensalada de duraznos salteados</figcaption>
+        </figure>
+        <figure class="dish-card">
+          <img src="assets/images/postre.png" alt="Postre">
+          <figcaption>Hotcakes con arandanos</figcaption>
+        </figure>
       </div>
     </section>
   </main>
@@ -86,7 +64,7 @@
         <a href="index.html">Inicio</a>
         <a href="vinos.html">Nuestros vinos</a>
         <a href="index.html#locales">Locales</a>
-        <a href="index.html#menu">Nuestro menú</a>
+        <a href="#inicio">Nuestro menú</a>
       </div>
       <div class="footer-links">
         <h2>¿Necesitás ayuda?</h2>
