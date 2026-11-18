@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tienda de Vinos</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Tienda de Vino, inicio">
+      <span>TIENDA</span>
+      <span>DE  VINO</span>
+    </a>
+
+    <details class="navigation" open>
+      <summary aria-label="Abrir menú de navegación"><span></span><span></span><span></span></summary>
+      <nav aria-label="Navegación principal">
+        <a href="vinos.html">Nuestros vinos</a>
+        <a href="tutoriales.html">Tutoriales</a>
+        <a href="#locales">Locales</a>
+        <a href="#menu">Nuestro menú</a>
+        <a href="trabaja-con-nosotros.html#formulario">Trabajá con nosotros</a>
+        <a href="franquicias.html">Franquicias</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </details>
+  </header>
+
+  <main>
+   
+
+    <section class="store" id="locales" aria-labelledby="store-title">
+      <p>Siempre hay una</p>
+      <h2 id="store-title">Tienda cerca tuyo</h2>
+      <span>Encontrá nuestra sucursal más cercana.</span>
+      <a class="button button-outline" href="#contacto">Ingresar</a>
+      <iframe
+        class="store-map"
+        title="Mapa de la Ciudad Autónoma de Buenos Aires"
+        src="https://www.openstreetmap.org/export/embed.html?bbox=-58.5315%2C-34.7050%2C-58.3350%2C-34.5260&amp;layer=mapnik&amp;marker=-34.6037%2C-58.3816"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contacto">
+    <div class="footer-main section-wrap">
+      <a class="brand" href="#inicio" aria-label="Tienda de Vino, volver al inicio">
+        <span>TIENDA</span>
+        <span>DE VINO</span>
+      </a>
+      <div class="footer-links">
+        <h2>Contenidos</h2>
+        <a href="#inicio">Inicio</a>
+        <a href="vinos.html">Nuestros vinos</a>
+        <a href="#locales">Locales</a>
+        <a href="#menu">Nuestro menú</a>
+      </div>
+      <div class="footer-links">
+        <h2>¿Necesitás ayuda?</h2>
+        <a href="tutoriales.html">Tutoriales</a>
+        <a href="trabaja-con-nosotros.html#formulario">Trabajá con nosotros</a>
+        <a href="franquicias.html">Franquicias</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+      <div class="newsletter">
+        <h2>¡Suscribite para recibir descuentos y novedades exclusivas!</h2>
+        <form id="newsletter-form">
+          <label class="visually-hidden" for="newsletter-name">Tu nombre</label>
+          <input id="newsletter-name" name="name" type="text" placeholder="Tu nombre" required>
+          <label class="visually-hidden" for="newsletter-email">Tu email</label>
+          <input id="newsletter-email" name="email" type="email" placeholder="Tu email" required>
+          <label class="newsletter-consent"><input type="checkbox" required> Sí, quiero recibir descuentos y novedades.</label>
+          <button class="button button-gold" type="submit">Suscribirme</button>
+          <p class="form-message" aria-live="polite"></p>
+        </form>
+        <h2 class="social-title">Conectate con nosotros</h2>
+        <div class="social-icons" aria-label="Redes sociales">
+          <a href="https://www.facebook.com/tienda.vino/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3c-3.3 0-5 2-5 5v2H6v4h3v5h4v-5h3l1-4h-4V9c0-.7.3-1 1-1z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/biendevinos/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm5.5-2.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>© Copyright 2026 Tienda de vino - Todos los derechos reservados.<br>Todos los logos, productos, marcas y nombres aquí utilizados son propiedad registrada.</p>
+    </div>
+  </footer>
+</body>
+</html>
